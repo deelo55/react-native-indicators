@@ -20,25 +20,25 @@ Activity indicator collection for React Native
 
 ## Features
 
-* Easy to use
-* Consistent look and feel on iOS and Android
-* Can be used as drop-in replacement for [ActivityIndicator][indicator]
-* Configurable appearance and animation
-* Configurable indicator size
-* Native driver based animation
-* Pure javascript implementation
-* Compatible with RN 0.45+, for older versions use [0.14.0][v014-url]
+- Easy to use
+- Consistent look and feel on iOS and Android
+- Can be used as drop-in replacement for [ActivityIndicator][indicator]
+- Configurable appearance and animation
+- Configurable indicator size
+- Native driver based animation
+- Pure javascript implementation
+- Compatible with RN 0.45+, for older versions use [0.14.0][v014-url]
 
 ## Installation
 
 ```bash
-npm install --save react-native-indicators
+npm install --save @deelo55/react-native-indicators
 ```
 
 ## Usage
 
 ```javascript
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   BallIndicator,
   BarIndicator,
@@ -49,100 +49,98 @@ import {
   SkypeIndicator,
   UIActivityIndicator,
   WaveIndicator,
-} from 'react-native-indicators';
+} from "react-native-indicators";
 
 class Example extends Component {
   render() {
-    return (
-      <DotIndicator color='white' />
-    );
+    return <DotIndicator color="white" />;
   }
 }
 ```
 
 ## Common properties
 
- name               | description                   | type     | default
-:------------------ |:----------------------------- | --------:|:-------------
- animationEasing    | Animation easing function     | Function | Easing.linear
- animationDuration  | Animation duration in ms      |   Number | 1200
- animating          | Animation toggle              |  Boolean | true
- interaction        | Animation is interaction      |  Boolean | true
- hidesWhenStopped   | Hide when not animating       |  Boolean | true
+| name              | description               |     type | default       |
+| :---------------- | :------------------------ | -------: | :------------ |
+| animationEasing   | Animation easing function | Function | Easing.linear |
+| animationDuration | Animation duration in ms  |   Number | 1200          |
+| animating         | Animation toggle          |  Boolean | true          |
+| interaction       | Animation is interaction  |  Boolean | true          |
+| hidesWhenStopped  | Hide when not animating   |  Boolean | true          |
 
 ## BallIndicator properties
 
- name  | description         | type   | default
-:----- |:------------------- | ------:|:------------
- color | Component color     | String | rgb(0, 0, 0)
- count | Component count     | Number | 8
- size  | Base component size | Number | 40
+| name  | description         |   type | default      |
+| :---- | :------------------ | -----: | :----------- |
+| color | Component color     | String | rgb(0, 0, 0) |
+| count | Component count     | Number | 8            |
+| size  | Base component size | Number | 40           |
 
 ## BarIndicator properties
 
- name  | description         | type   | default
-:----- |:------------------- | ------:|:------------
- color | Component color     | String | rgb(0, 0, 0)
- count | Component count     | Number | 3
- size  | Base component size | Number | 40
+| name  | description         |   type | default      |
+| :---- | :------------------ | -----: | :----------- |
+| color | Component color     | String | rgb(0, 0, 0) |
+| count | Component count     | Number | 3            |
+| size  | Base component size | Number | 40           |
 
 ## DotIndicator properties
 
- name  | description         | type   | default
-:----- |:------------------- | ------:|:------------
- color | Component color     | String | rgb(0, 0, 0)
- count | Component count     | Number | 4
- size  | Base component size | Number | 16
+| name  | description         |   type | default      |
+| :---- | :------------------ | -----: | :----------- |
+| color | Component color     | String | rgb(0, 0, 0) |
+| count | Component count     | Number | 4            |
+| size  | Base component size | Number | 16           |
 
 ## MaterialIndicator properties
 
- name       | description           | type   | default
-:---------- |:--------------------- | ------:|:------------
- color      | Component color       | String | rgb(0, 0, 0)
- size       | Base component size   | Number | 40
- trackWidth | Indicator track width | Number | size / 10
+| name       | description           |   type | default      |
+| :--------- | :-------------------- | -----: | :----------- |
+| color      | Component color       | String | rgb(0, 0, 0) |
+| size       | Base component size   | Number | 40           |
+| trackWidth | Indicator track width | Number | size / 10    |
 
 ## PacmanIndicator properties
 
- name  | description         | type   | default
-:----- |:------------------- | ------:|:------------
- color | Component color     | String | rgb(0, 0, 0)
- size  | Base component size | Number | 48
+| name  | description         |   type | default      |
+| :---- | :------------------ | -----: | :----------- |
+| color | Component color     | String | rgb(0, 0, 0) |
+| size  | Base component size | Number | 48           |
 
 ## PulseIndicator properties
 
- name  | description         | type   | default
-:----- |:------------------- | ------:|:------------
- color | Component color     | String | rgb(0, 0, 0)
- size  | Base component size | Number | 40
+| name  | description         |   type | default      |
+| :---- | :------------------ | -----: | :----------- |
+| color | Component color     | String | rgb(0, 0, 0) |
+| size  | Base component size | Number | 40           |
 
 ## SkypeIndicator properties
 
- name     | description             | type   | default
-:-------- |:----------------------- | ------:|:------------
- color    | Component color         | String | rgb(0, 0, 0)
- count    | Component count         | Number | 5
- size     | Base component size     | Number | 40
- minScale | Minimum component scale | Number | 0.2
- maxScale | Maximum component scale | Number | 1.0
+| name     | description             |   type | default      |
+| :------- | :---------------------- | -----: | :----------- |
+| color    | Component color         | String | rgb(0, 0, 0) |
+| count    | Component count         | Number | 5            |
+| size     | Base component size     | Number | 40           |
+| minScale | Minimum component scale | Number | 0.2          |
+| maxScale | Maximum component scale | Number | 1.0          |
 
 ## UIActivityIndicator properties
 
- name  | description         | type   | default
-:----- |:------------------- | ------:|:------------
- color | Component color     | String | rgb(0, 0, 0)
- count | Component count     | Number | 12
- size  | Base component size | Number | 40
+| name  | description         |   type | default      |
+| :---- | :------------------ | -----: | :----------- |
+| color | Component color     | String | rgb(0, 0, 0) |
+| count | Component count     | Number | 12           |
+| size  | Base component size | Number | 40           |
 
 ## WaveIndicator properties
 
- name       | description         | type   | default
-:---------- |:------------------- | ------:|:------------
- color      | Component color     | String | rgb(0, 0, 0)
- count      | Component count     | Number | 4
- size       | Base component size | Number | 40
- waveFactor | Wave base number    | Number | 0.54
- waveMode   | Wave appearance     | String | fill
+| name       | description         |   type | default      |
+| :--------- | :------------------ | -----: | :----------- |
+| color      | Component color     | String | rgb(0, 0, 0) |
+| count      | Component count     | Number | 4            |
+| size       | Base component size | Number | 40           |
+| waveFactor | Wave base number    | Number | 0.54         |
+| waveMode   | Wave appearance     | String | fill         |
 
 Possible values for `waveMode` are `fill` and `outline`
 
